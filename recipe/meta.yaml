@@ -10,7 +10,7 @@ source:
     sha256: dffb7010922880ace6ceed642156c64e2a64620f27e0849f43bc4f68fd3c2c09
 
 build:
-  number: 0
+  number: 1
   script:
     - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
@@ -22,9 +22,9 @@ requirements:
     - {{ compiler('c') }}
     - make
   host:
-    - ruby >=2.5,<2.6
+    - ruby >=2.7,<3
   run:
-    - ruby >=2.5,<2.6
+    - ruby >=2.7,<3
 
 test:
   commands:
