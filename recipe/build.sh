@@ -1,5 +1,5 @@
 set -e
 
-gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem
-gem unpack {{ name }}-{{ version }}.gem
-cp {{ name }}-*/LICENSE .
+gem install -N -l -V --norc --ignore-dependencies ${PKG_NAME}-${PKG_VERSION}.gem
+gem unpack ${PKG_NAME}-${PKG_VERSION}.gem
+cp ${PKG_NAME}-*/LICENSE .
