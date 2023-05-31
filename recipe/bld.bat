@@ -1,4 +1,4 @@
-set "PKG_NAME=rb-escape_utils"
+set "PKG_NAME=escape_utils"
 if %errorlevel% NEQ 0 exit /b %errorlevel%
 
 gem install -N -l -V --norc --ignore-dependencies %PKG_NAME%-%PKG_VERSION%.gem
